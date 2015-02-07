@@ -1,2 +1,9 @@
-<h1>AjaxTest#index</h1>
-<p>Find me in app/views/ajax_test/index.html.erb</p>
+<h1>Greeting</h1>
+<%= form_tag('/ajax_test/index', method: "post", :remote => true, :id => "result_form") do %>
+  <%= text_field_tag(:greeting) %>
+  <%= text_field_tag(:greeting1) %>
+  <%= text_field_tag(:greeting2) %>
+  <%= text_field_tag(:greeting3) %>
+  <%= submit_tag("show") %>
+<%end%>
+<div id="result"></div>

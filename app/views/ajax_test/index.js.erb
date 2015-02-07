@@ -1,0 +1,40 @@
+var data = {
+  title: "テストの点数",
+  description: "この前の資格試験のテスト",
+
+  // 100人分
+  list: [
+    { name: 'name-1', score: 10 },
+    { name: 'name-2', score: 20 },
+    { name: 'name-3', score: 30 }
+  ]
+};
+
+var template1 = [
+  "<h2>{%- title %}</h2>",
+  "<p>{%- description %}</p>",
+  '<ul class="cf">',
+  "{% _.each(list, function(val, i) { %}",
+    "<li>",
+      "No.{%- i + 1 %}<br />",
+      "name:  {%- val.name %}<br />",
+      "score: {%- val.score %}<br />",
+    "</li>",
+  "{% }) %}",
+  "</ul>"
+].join("");
+
+var template2 = [
+  '<ul class="cf">',
+  "{% _.each(array, function(element, index, @kekka) { %}",
+    "<li>",
+      "name:  {%- element %}<br />",
+    "</li>",
+  "{% }) %}",
+  "</ul>"
+].join("");
+
+var compiled = _.template(template2);
+
+#$("#result").append(compiled(data));
+$("#result").append(compiled(@kekka));

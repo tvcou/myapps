@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require underscore
+//= require backbone
+
+_.templateSettings = {
+  interpolate: /\{\{(.+?)\}\}/g,
+  evaluate: /\{%(.+?)%\}/g,
+  escape: /\{%-(.+?)%\}/g
+};
