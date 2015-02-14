@@ -45,3 +45,4 @@ end
 
 gem 'rails-assets-backbone'
 gem 'systemu'
+gem 'rsolr'
