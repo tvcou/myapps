@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   post 'ajax_test/index'
 
   get 'systemu_test/index'
+
   get 'solr_test/index'
+  post 'solr_test/index'
 end
