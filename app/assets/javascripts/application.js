@@ -16,6 +16,7 @@
 //= require_tree .
 //= require underscore
 //= require backbone
+//= require jquery_nested_form
 
 _.templateSettings = {
   interpolate: /\{\{(.+?)\}\}/g,

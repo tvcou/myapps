@@ -46,3 +46,5 @@ end
 gem 'rails-assets-backbone'
 gem 'systemu'
 gem 'rsolr'
+gem 'rsolr'
+gem 'nested_form'
