@@ -1,0 +1,7 @@
+<h1>solr_test</h1>
+
+<%= form_tag('/solr_test/index', method: "post", :remote => true, :id => "result_form") do %>
+  <%= text_field_tag(:search_word) %>
+  <%= submit_tag("show") %>
+<%end%>
+<div id="result"></div>

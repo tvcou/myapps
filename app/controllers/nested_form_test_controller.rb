@@ -1,0 +1,2 @@
+class NestedFormTestController < ApplicationController
+end
